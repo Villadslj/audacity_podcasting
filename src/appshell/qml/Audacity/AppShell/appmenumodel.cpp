@@ -84,6 +84,7 @@ void AppMenuModel::load()
         makeGenerateMenu(),
         makeEffectMenu(),
         makeAnalyzeMenu(),
+        makePodcastMenu(),
         makeToolsMenu(),
         makeHelpMenu()
     };
@@ -421,6 +422,19 @@ MenuItem* AppMenuModel::makeEffectMenu()
 MenuItem* AppMenuModel::makeAnalyzeMenu()
 {
     return makeMenu(TranslatableString("appshell-menu-analyze", "&Analyze"), makeAnalyzeItems(), "menu-analyze");
+}
+
+MenuItem* AppMenuModel::makePodcastMenu()
+{
+    MenuItemList podcastItems {
+        makeMenuItem("podcast-strip-silence"),
+        makeMenuItem("podcast-tighten-gaps"),
+        makeMenuItem("podcast-mark-speech"),
+        makeSeparator(),
+        makeMenuItem("podcast-settings"),
+    };
+
+    return makeMenu(TranslatableString("appshell-menu-podcast", "&Podcast"), podcastItems, "menu-podcast");
 }
 
 MenuItem* AppMenuModel::makeToolsMenu()

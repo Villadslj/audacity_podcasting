@@ -108,6 +108,7 @@ private:
     muse::uicomponents::MenuItem* makeGenerateMenu();
     muse::uicomponents::MenuItem* makeEffectMenu();
     muse::uicomponents::MenuItem* makeAnalyzeMenu();
+    muse::uicomponents::MenuItem* makePodcastMenu();
     muse::uicomponents::MenuItem* makeToolsMenu();
     muse::uicomponents::MenuItem* makeExtraMenu();
     muse::uicomponents::MenuItem* makeHelpMenu();

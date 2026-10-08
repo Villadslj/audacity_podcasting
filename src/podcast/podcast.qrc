@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/Audacity/Podcast/qmldir</file>
+        <file>qml/Audacity/Podcast/PodcastSettingsDialog.qml</file>
+        <file>qml/Audacity/Podcast/SettingRow.qml</file>
+    </qresource>
+</RCC>
