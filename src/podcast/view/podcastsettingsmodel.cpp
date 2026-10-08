@@ -35,7 +35,7 @@ QVariantMap makeEntry(const QString& title, bool overridden, const SpeechDetecti
 }
 
 PodcastSettingsModel::PodcastSettingsModel(QObject* parent)
-    : QObject(parent)
+    : QObject(parent), muse::Contextable(muse::iocCtxForQmlObject(this))
 {
 }
 
