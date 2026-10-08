@@ -49,6 +49,7 @@ add_subdirectory(automation)
 
 add_subdirectory(extensions/native)
 add_subdirectory(trackedit)
+add_subdirectory(podcast)
 
 if (MUSE_MODULE_EXTENSIONS)
     add_subdirectory(extensions)
